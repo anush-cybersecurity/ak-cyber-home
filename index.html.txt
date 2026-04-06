@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AK Cyber Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>AK CYBER HOME</h1>
+  <p>Cybersecurity | Protect | Detect | Respond</p>
+</header>
+
+<section>
+  <h2>Welcome</h2>
+  <p>This is my cybersecurity website 🚀</p>
+  <button onclick="showMessage()">Get Started</button>
+</section>
+
+<section>
+  <h2>Services</h2>
+  <ul>
+    <li>SOC Monitoring</li>
+    <li>Penetration Testing</li>
+    <li>Cloud Security</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
