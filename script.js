@@ -1,3 +1,5 @@
-function showMessage() {
-  alert("Welcome to AK Cyber Home 🚀");
+function scrollToContact() {
+  document.getElementById("contact").scrollIntoView({
+    behavior: "smooth"
+  });
 }
