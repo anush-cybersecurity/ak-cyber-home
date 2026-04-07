@@ -37,3 +37,26 @@ header {
   z-index: -1;
   background: black;
 }
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+#contact input,
+#contact textarea,
+#contact select {
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#contact button {
+  background: cyan;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
