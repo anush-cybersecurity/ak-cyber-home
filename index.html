@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AK Cyber Home</title>
+  <title>AK's Cyber Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
+  
 <body>
-
+<canvas id="matrix"></canvas>
 <header>
   <h1>AK CYBER HOME</h1>
   <p>Cybersecurity | Protect | Detect | Respond</p>
@@ -25,13 +26,34 @@
     <li>Cloud Security</li>
   </ul>
 </section>
+  
+  <section>
+  <h2>🛡️ Live Threat Dashboard</h2>
+  <div class="card">
+    <p>Threat Level: <span id="threat">LOW</span></p>
+    <p>Alerts Detected: <span id="alerts">3</span></p>
+    <button onclick="simulateThreat()">Simulate Attack</button>
+  </div>
+</section>
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:kumaralla.tech@gmail.com">kumaralla.tech@gmail.com</a></p>
+<section id="contact">
+  <h2>📬 Contact Me</h2>
+  <form action="https://formspree.io/f/yourid" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
 <script src="script.js"></script>
+<button onclick="openChat()" class="chat-btn">💬</button>
 
+<div id="chatbox" style="display:none;">
+  <p>👋 Hi, I’m AK Cyber Assistant</p>
+  <input type="text" id="userInput" placeholder="Ask something...">
+  <button onclick="reply()">Send</button>
+  <p id="botReply"></p>
+</div>
 </body>
 </html>
